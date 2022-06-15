@@ -1,1 +1,5 @@
-<h1>Contact</h1>
+<h1>contact</h1>
+
+<?php
+include './includes/frmContact2.php';
+?>
