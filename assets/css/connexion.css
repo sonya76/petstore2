@@ -1,0 +1,49 @@
+label {
+    margin: 15px;
+}
+
+.passwordOublie {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    margin: 0px;
+    color: #d6c4b8;
+}
+
+.left-titre,
+.right-titre {
+    width: 550px;
+}
+
+.logoTitre {
+    font-family: "Stint Ultra Expanded regular medium bold xbold";
+    font-weight: 400;
+    font-size: 22px;
+    color: #9D5D35;
+}
+
+.nouveauCompte,
+.monCompte {
+    text-align: center;
+}
+
+ul.listePrivileges {
+    list-style-type: square;
+    line-height: 300%;
+}
+
+ul.listePrivileges li::before {
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li::marker {
+    color: #9D5D35;
+}
+
+a:hover,
+a:focus {
+    color: #9d5d35;
+}
