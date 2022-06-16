@@ -2,18 +2,22 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   
-#navp,
-#headMenu {
+#navp {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #f5f1ee;
   }
+
+#logoNav img{
+  width: 200px;
+}
 
 #headMenu {
     margin-right: 15rem;
     padding: 0;
-    display: flex;  
+    display: flex; 
+    align-items: center; 
     margin: 0 1rem;
   }
   
@@ -83,11 +87,11 @@ button[type="submit"]:focus,
     outline: none;
   }
   
-img {
+/* img {
     margin-left: 15rem;
     height: 140px;
     width: 200px;
-  }
+  } */
 
 #headMenu a {
     font-family: "montserrat", Arial, Helvetica, sans-serif;
