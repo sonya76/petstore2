@@ -1,0 +1,39 @@
+.contenaire{
+margin: 0;
+height: 100%;
+}
+.haut
+{
+   
+background-color: grey; 
+display: flex;
+   
+    height: 55px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p,h3,h4{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+span
+{
+    color: #9D5D35; 
+}
+.bas{
+    display: flex;
+margin-top: 0px;
+background-color: rgb(0, 0, 0);
+height: 205px;
+justify-content: space-around;
+
+}
+.e{
+    background-color: black;
+    text-align: center;
+}
+.a{
+color: white;
+}
