@@ -1,8 +1,8 @@
 <div class="hearder">
         <h2>Connexion</h2>
       </div>
-      <div class="container">
-        <div class="container-left"> 
+      <div class="box">
+        <div class="left"> 
           <div class="left-titre">
             <h3 class="monCompte">J'ai un compte <span class="logoTitre">PetStore</span></h3>
           </div>
@@ -27,7 +27,7 @@
           </div>
         </div>
       
-        <div class="container-right"> 
+        <div class="right"> 
           <div class="right-titre">
             <h3 class="nouveauCompte"> Je crée mon compte <span class="logoTitre">PetStore</span></h3>
           </div>

@@ -3,7 +3,7 @@
 }
 
 form {
-    position: absolute;
+    position: relative;
     /* postulat de départ */
     margin-top: 20px;
     margin-left: 20px;
@@ -27,7 +27,7 @@ input[type="submit"]:hover {
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 90%;
     margin: 15px;
     padding: 12px 15px;
     border: 1px solid #ccc;
@@ -39,7 +39,7 @@ input[type="password"] {
     margin: 50px 0px 10px 150px;
 }
 
-.container {
+.box {
     display: flex;
     justify-content: center;
     margin: 4rem auto;
