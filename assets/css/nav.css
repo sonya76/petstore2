@@ -23,12 +23,13 @@
   
 #headMenu > li {
     list-style: none;
-    /* repetition
-    margin: 0.5rem;*/
+   /*  repetition */
+    margin: 0.5rem;
     text-align: center;
     display: block;
     padding: 1rem;  
-  }
+  } 
+ 
 
 /* .container{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
