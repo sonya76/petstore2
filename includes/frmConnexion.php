@@ -43,8 +43,8 @@
                       <li> et encore de nombreux avantages...</li>
                   </ul>
               <div class="form-group">
-                  <input type="submit" value="Créer un compte" id="submit" />
-              </div>
+                 <a href="index.php?page=inscription"> <input type ="submit"  value="Créer un compte" id="submit" /></a>
+               </div>
           </div>
         </div>
 

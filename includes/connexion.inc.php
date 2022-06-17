@@ -28,7 +28,12 @@
         }
 
         else {
-            include './includes/frmConnexion.php';
+$_SESSION['loginUser'] = $mail;
+print_r($_SESSION['loginUser']);
+
+
+
+header ('location:index.php?page=accueil');
         }
     }
     
