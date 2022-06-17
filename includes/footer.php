@@ -31,9 +31,7 @@
             <a href="#"><i class="fa-brands fa-linkedin"></i>
             <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"> <i class="fa-brands fa-snapchat-square"></i></a>
-           
-
+            <a href="#"><i class="fa-brands fa-snapchat-square"></i></a>
         </div>
     </div>
 

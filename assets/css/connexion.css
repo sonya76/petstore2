@@ -25,6 +25,7 @@ label {
 .nouveauCompte,
 .monCompte {
     text-align: center;
+    padding: 10px;
 }
 
 ul.listePrivileges {
