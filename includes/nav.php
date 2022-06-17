@@ -16,7 +16,7 @@
             <a href="index.php?page=inscription">
               <div class="icon"><i class="fa-solid fa-user-plus fa-2xl"></i></i></div>
               <div><span>Inscription</span></div>
-            </a>
+             </a>
           </li>
           <li>
             <a href="index.php?page=connexion">
