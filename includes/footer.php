@@ -1,82 +1,176 @@
-<link rel="stylesheet" href="../assets/css/style.css">
-<footer>
-    <div class="contenaire">
 <div class="haut">
-<div class="icone"><div><i class="fa-solid fa-box-open fa-2xl"></i><span>Livraison en 2 à 5 jours ouvrés</span> </div></div>
-<div class="icone"><div><i class="fa-solid fa-store fa-2xl"></i><span>Click & collect sous 2h en magasin</span> </div></div>
-<div class="icone"><div><i class="fa-solid fa-truck-fast fa-2xl"></i><span>Livraison offerte dès 49€</span> </div></div>
-<div class="icone"><div><i class="fa-solid fa-shield fa-2xl"></i><span>Paiement sécurisé</span> </div></div>
-</div>
-<div class="bas">
-<div class="a">
-    <p><h3>PetStore</h3></p>
-    <p>une petite description toto</p>
-    <p>194 Rue de la Ronce, 76230 Isneauville</p>
-    <p>07 10 12 25 52</p>
-    <p>contact@petstore.com</p>
-    <div><!--pour traiter les icones social medias -->
-        <i class="fa-brands fa-instagram fa-xl a"></i>
-    <i class="fa-brands fa-facebook-square fa-xl a"></i>
-    <i class="fa-brands fa-snapchat-square fa-xl a"></i>
-</div> 
-</div>
-<div class="b">
-    <p><h4>INFORMATIONS</h4></p>
-<p>Qui sommes nous ?</p>
-<p>Découvrir Petsor Santé</p>
-<p>Découvrir mydogmate</p>
-<p>Espace Presse</p>
-<p>CGV</p>
-<p>Crédit</p>
-<p>Mentions légales</p>
-<p>Modes de livraison</p>
-<p>Tous nos magasins</p>
-<p>Toutes nos offres promotionnelles </p></div>
-<div class="c">
-    <p><h4>CATEGORIES</h4></p>
-    <p>Chiens</p>
-    <p>Chats</p>
-    <p>Aquariophilie & Bassins</p>
-    <p>Oiseaux</p>
-    <p>Rongeurs & Co</p>
-    <p>Reptiles & Co</p>
-    <p>Animaux de la nature</p>
-    <p>Livres, Cadeaux & Art créatif</p>
-    <p>Nos Conseils</p>
-    
-</div>
-<div class="d">
-<p><h4>PETSTORE RECOMMANDE</h4></p>
-<p> PetStore</p>
-<p>Purina One</p>
-<p>Royal Canin</p>
-<p>Nutrivia Nature</p>
-<p>Nutrivia</p>
-<p>Wellnes</p>
-<p>Orijen</p>
-<p>Acana</p>
-<p>Nature Diet</p>
-<p>Lily's Kitchen</p>
-<p>Vigor &Sage</p>
-<p>Carnilove</p>
-<p>Vitakraft</p>
-<p>Tetra</p>
-
-
-</div>
-
-
-
-</div>
-
- 
-
-<div class="e"><p>PetStore &copy; <?php echo date("Y"); ?> - all rights reserved</p></div>
-
-
-
+    <div class="icone">
+        <div class="label"><i class="fa-solid fa-box-open fa-4x"></i><span><strong> Livraison en 2 à 5 jours ouvrés</strong></span></div>
     </div>
-   
+    <div class="icone">
+        <div class="label"><i class="fa-solid fa-store fa-4x"></i><span><strong> Click & collect sous 2h en magasin</strong></span></div>
+    </div>
+    <div class="icone">
+        <div class="label"><i class="fa-solid fa-truck-fast fa-4x"></i><span><strong> Livraison offerte dès 49€</strong></span></div>
+    </div>
+    <div class="icone">
+        <div class="label"><i class="fa-solid fa-shield fa-4x"></i><span><strong> Paiement sécurisé</strong></span></div>
+    </div>
+</div>
+<footer class="footer">
+
+    <div class="footer__addr">
+        <h1 class="footer__logo">PetStore</h1>
+        <p>une petite description toto</p>
+        <address>
+            <p>194 Rue de la Ronce, 76230 Isneauville</p>
+            <br />
+            <p>07 10 12 25 52</p>
+            <br />
+            <a href="mailto:contact@petstore.com">contact@petstore.com</a>
+        </address>
+        <br />
+        <div class="footer__iconesSocial">
+            <!--pour traiter les icones social medias -->
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat-square"></i></a>
+        </div>
+    </div>
+
+    <ul class="footer__nav">
+        <li class="nav__item">
+            <h2 class="nav__title">INFORMATIONS</h2>
+            <ul class="nav__ul">
+                <li>
+                    <a href="#">Qui sommes nous ?</a>
+                </li>
+                <li>
+                    <a href="#">Découvrir Petsor Santé</a>
+                </li>
+
+                <li>
+                    <a href="#">Découvrir mydogmate</a>
+                </li>
+
+                <li>
+                    <a href="#">Espace Presse</a>
+                </li>
+                <li>
+                    <a href="#">CGV</a>
+                </li>
+                <li>
+                    <a href="#">Crédit</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="#">Modes de livraison</a>
+                </li>
+                <li>
+                    <a href="#">Tous nos magasins</a>
+                </li>
+                <li>
+                    <a href="#">Toutes nos offres promotionnelles</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item">
+            <h2 class="nav__title">CATEGORIES</h2>
+
+            <ul class="nav__ul">
+                <li>
+                    <a href="#">Chiens</a>
+                </li>
+                <li>
+                    <a href="#">Chats</a>
+                </li>
+
+                <li>
+                    <a href="#">Aquariophilie & Bassins</a>
+                </li>
+
+                <li>
+                    <a href="#">Oiseaux</a>
+                </li>
+
+                <li>
+                    <a href="#">Rongeurs & Co</a>
+                </li>
+
+                <li>
+                    <a href="#">Reptiles & Co</a>
+                </li>
+
+                <li>
+                    <a href="#">Animaux de la nature</a>
+                </li>
+                <li>
+                    <a href="#">Livres, Cadeaux & Art créatif</a>
+                </li>
+                <li>
+                    <a href="#">Nos Conseils</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item">
+            <h2 class="nav__title">PETSTORE RECOMMANDE</h2>
+
+            <ul class="nav__ul">
+                <li>
+                    <a href="#">PetStore</a>
+                </li>
+
+                <li>
+                    <a href="#">Royal Canin</a>
+                </li>
+
+                <li>
+                    <a href="#">Nutrivia Nature</a>
+                </li>
+                <li>
+                    <a href="#">Nutrivia</a>
+                </li>
+
+                <li>
+                    <a href="#">Wellnes</a>
+                </li>
+
+                <li>
+                    <a href="#">Orijen</a>
+                </li>
+                <li>
+                    <a href="#">Acana</a>
+                </li>
+
+                <li>
+                    <a href="#">Nature Diet</a>
+                </li>
+
+                <li>
+                    <a href="#">Lily's Kitchen</a>
+                </li>
+                <li>
+                    <a href="#">Vigor &Sage</a>
+                </li>
+
+                <li>
+                    <a href="#">Carnilove</a>
+                </li>
+
+                <li>
+                    <a href="#">Vitakraft</a>
+                </li>      
+                <li>
+                    <a href="#">Tetra</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="legal">
+        <p>PetStore &copy; <?php echo date("Y"); ?> - all rights reserved</p>
+    </div>
 </footer>
+
 </body>
+
 </html>
