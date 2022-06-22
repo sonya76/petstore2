@@ -62,22 +62,14 @@ span {
   font-style: normal;
   color: #999;
 }
-.footer__iconesSocial i {
-  justify-content: left;
-  color: #999;
-  line-height: 0;
-  margin: 8;
-  font-size: 1rem;
-  align-content: space-between;
-
+.footer__iconesSocial {
   display: flex;
-  align-content: center;
-  justify-content: space-between;
   align-items: center;
-  width: 160px;
-  
-  /* flex-wrap: wrap; */
-
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 50%;
+  font-size: 30px;
 }
 .footer__btn {
   display: flex;
