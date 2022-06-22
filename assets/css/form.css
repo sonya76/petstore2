@@ -25,7 +25,7 @@ input[type="submit"]:hover {
     background-color: #9d5d35;
 }
 
-input[type="email"],
+input[type="email"],input[type="text"],
 input[type="password"] {
     width: 90%;
     margin: 15px;
