@@ -1,8 +1,11 @@
+<div class="hearder">
+<h2>Inscription</h2>
+      </div>
 <form action="index.php?page=inscription" method="post">
   <div class="box">
-    <div class="gauche">
-      <div class="titre1">
-        <h3>Infomation Générales </h3>
+    <div class="left-box">
+      <div class="titre">
+        <h3>Infomation Générales</h3>
       </div>
 
       <div>
@@ -51,8 +54,8 @@
       </div>
     </div>
 
-    <div class="droite">
-      <div>
+    <div class="right-box">
+      <div class="titre">
         <h3>Contact Details</h3>
       </div>
       <div>
@@ -90,10 +93,11 @@
         </label>
       </div>
 
-      <div>
+      <div class="champValid">
         <input type="reset" value="Effacer" />
         <input type="submit" value="Envoyer" />
       </div>
+
     </div>
   </div>
   <input type="hidden" name="frmInscription" />

@@ -23,7 +23,7 @@
                     <textarea id="msg" name="user_message"></textarea>
 
                 </div>
-                <div class="form-group">
+                <div class="toto" style="    display: flex; justify-content: center">
                     <input type="submit" value="Envoyer" id="submit">
                 </div>
             </form>
