@@ -36,5 +36,11 @@ color: #9d5d35;
     resize: vertical;
 
 
-    }
+}
+
+.toto
+{
+    display: flex;
+    justify-content: center;
+}
     
