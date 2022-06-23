@@ -20,7 +20,7 @@
               <div class="form-group">
                 <a class="passwordOublie" href="#">Mot de passe oublié ?</a>
               </div>
-              <div class="form-group">
+              <div class="form-group" style="text-align:center;">
                 <input type="submit" value="Connexion" id="submitConnex" />
               </div>
               <input type="hidden" name="frmConnexion" />
@@ -42,7 +42,7 @@
                       <li> Suivez vos commandes passées en magasin ou en ligne</li>
                       <li> et encore de nombreux avantages...</li>
                   </ul>
-              <div class="form-group">
+              <div class="form-group"style="text-align:center;">
                  <a href="index.php?page=inscription"> <input type ="submit"  value="Créer un compte" id="submit" /></a>
                </div>
           </div>
