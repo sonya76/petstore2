@@ -51,25 +51,4 @@
       </form>
     </div>
   </div>
-
-  <div class="container-right">
-    <div class="right-titre">
-      <h3 class="nouveauCompte"> Je crée mon compte <span class="logoTitre">PetStore</span></h3>
-    </div>
-
-    <div class="box-right">
-      <br>
-      <strong><em>L'inscription est simple et gratuite !</em></strong>
-      <ul class="listePrivileges">
-        <li> Consulter vos points et remises de votre carte de fidélité <span class="logoTitre">PetStore</span></li>
-        <li> Gérez vos informations personnelles</li>
-        <li> Suivez vos commandes passées en magasin ou en ligne</li>
-        <li> et encore de nombreux avantages...</li>
-      </ul>
-      <div class="form-group">
-        <input type="submit" value="Créer un compte" id="submit" />
-      </div>
-    </div>
-  </div>
-
 </div>
