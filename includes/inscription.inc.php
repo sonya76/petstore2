@@ -3,13 +3,14 @@
 <?php
 
 if (isset($_POST["frmInscription"])) {
+    $genre = htmlentities(trim($_POST['genre']));
     $nom = htmlentities(trim($_POST['nom']));
     $prenom = htmlentities(trim($_POST['prenom']));
     $mail = htmlentities(trim($_POST['email']));
     $password1 = htmlentities(trim($_POST['password1']));
     $password2 = htmlentities(trim($_POST['password2']));
-    $dateNaissance = htmlentities(trim($_POST['date']));
-    $adresse = htmlentities(trim($_POST['adresse']));
+    $adresse1 = htmlentities(trim($_POST['adresse']));
+    $adresse2 = htmlentities(trim($_POST['adressePlus']));
     $cp = htmlentities(trim($_POST['codePostal']));
     $ville = htmlentities(trim($_POST['ville']));
     $telephone = htmlentities(trim($_POST['telephone']));
@@ -45,18 +46,16 @@ if (isset($_POST["frmInscription"])) {
 
         include "./includes/frmInscription.php";
     } else {
-        $password = password_hash($password1, PASSWORD_DEFAULT);
-
-        $requete = "INSERT INTO utilisateurs (nom, prenom, mail, password, adresse1, cp, ville, tel)
-    VALUES ('$nom', '$prenom', '$mail', '$password', '$adresse', '$cp', '$ville', '$telephone');";
-
-        $queryInsert = new Sql();
-        $queryInsert->inserer($requete);
+        $inscriptionEnCours = new Utilisateur();
+        $etat = $inscriptionEnCours->inscrireUtilisateur($genre, $prenom, $nom, $mail, $password1, $adresse1, $adresse2, $cp, $ville, $telephone);
+        if ($etat) {
+            echo "Inscription réussie!";
+        } else {
+            echo "Inscription échouée.";
+        }
     }
 } else {
     $nom = $prenom = $mail = "";
     //$message = "je ne viens pas du formulaire";
     include "./includes/frmInscription.php";
 }
-
-include './includes/frmInscription.php';
