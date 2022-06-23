@@ -7,6 +7,7 @@ if (isset($_POST["frmInscription"])) {
     $nom = htmlentities(trim($_POST['nom']));
     $prenom = htmlentities(trim($_POST['prenom']));
     $mail = htmlentities(trim($_POST['email']));
+    $mail = htmlentities(trim($_POST['emailConfirm']));
     $password1 = htmlentities(trim($_POST['password1']));
     $password2 = htmlentities(trim($_POST['password2']));
     $adresse1 = htmlentities(trim($_POST['adresse']));
@@ -16,6 +17,9 @@ if (isset($_POST["frmInscription"])) {
     $telephone = htmlentities(trim($_POST['telephone']));
 
     $erreurs = array();
+
+    if ($genre === 1)
+        array_push($erreurs, "Veuillez précisez votre genre.");
 
     if (mb_strlen($nom) === 0)
         array_push($erreurs, "Il manque votre nom.");
@@ -27,11 +31,21 @@ if (isset($_POST["frmInscription"])) {
         array_push($erreurs, "Il manque votre e-mail.");
     elseif (!filter_var($mail, FILTER_VALIDATE_EMAIL))
         array_push($erreurs, "Votre adresse mail n'est pas conforme");
+    elseif ($mail !== $mailVerif)
+        array_push($erreurs, "Vos adresses email ne sont pas identiques");
 
     if (mb_strlen($password1) === 0 || mb_strlen($password2) === 0)
         array_push($erreurs, "Veuillez saisir votre mot de passe et sa confirmation");
     elseif ($password1 !== $password2)
         array_push($erreurs, "Vos mots de passe ne sont pas identiques");
+
+    if (mb_strlen($ville) === 0)
+        array_push($erreurs, "Il manque votre ville.");
+    if (mb_strlen($cp) === 0)
+        array_push($erreurs, "Il manque votre code postal.");
+    if (mb_strlen($telephone) === 0)
+        array_push($erreurs, "Il manque votre numéro de téléphone.");
+
 
     if (count($erreurs)) {
         $messageErreur = "<ul>";
