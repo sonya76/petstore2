@@ -7,7 +7,7 @@ if (isset($_POST["frmInscription"])) {
     $nom = htmlentities(trim($_POST['nom']));
     $prenom = htmlentities(trim($_POST['prenom']));
     $mail = htmlentities(trim($_POST['email']));
-    $mail = htmlentities(trim($_POST['emailConfirm']));
+    $mailVerif = htmlentities(trim($_POST['emailConfirm']));
     $password1 = htmlentities(trim($_POST['password1']));
     $password2 = htmlentities(trim($_POST['password2']));
     $adresse1 = htmlentities(trim($_POST['adresse']));
