@@ -2,15 +2,15 @@
   <div class="box">
     <div class="gauche">
       <div class="titre1">
-        <h3>Infomation Generale </h3>
+        <h3>Infomation Générales </h3>
       </div>
 
       <div>
-        <select class="select">
+        <select class="select" name="genre">
           <option value="1" selected>Title</option>
-          <option value="2">Monsieur</option>
-          <option value="3">Madame</option>
-          <option value="4">Mademoiselle</option>
+          <option value="H">Homme</option>
+          <option value="F">Femme</option>
+          <option value="N">Non précisé</option>
         </select>
       </div>
 
@@ -49,11 +49,6 @@
           </div>
         </div>
       </div>
-
-      <div>
-        <label for="date">Date de Naissance :</label>
-        <input type="date" name="date" id="date" />
-      </div>
     </div>
 
     <div class="droite">
@@ -82,11 +77,6 @@
       </div>
 
       <div class="ligne4">
-        <div>
-          <label for="indicatif">Code +</label>
-          <input type="text" id="indicatif" />
-        </div>
-
         <div>
           <label for="telephone">Téléphone :</label>
           <input type="text" name="telephone" id="telephone" />

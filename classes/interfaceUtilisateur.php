@@ -2,7 +2,18 @@
 
 interface interfaceUtilisateur
 {
-    public function inscrireUtilisateur(string $nomUtilisateur, string $prenomUtilisateur, string $mailUtilisateur, string $mdpUtilisateur): bool;
+    public function inscrireUtilisateur(
+        string $genre,
+        string $prenom,
+        string $nom,
+        string $email,
+        string $password,
+        string $adresse1,
+        string $adresse2,
+        string $codePostal,
+        string $ville,
+        string $telephone
+    ): bool;
     public function modifierUtilisateur();
     public function supprimerUtilisateur();
     public function connecterUtilisateur();
