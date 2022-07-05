@@ -33,17 +33,23 @@
     font-size: 40px;
     vertical-align: middle;
     text-align: center;
+    color: rgb(221, 220, 226);
+    
+
+  }
+  
+
     
     /*....................slider................................*/
     
-    }
-.sliders{
+    
+.slider{
     width: 100%;
     position: relative;
     
     
 }
-.contunair-slider{
+.contunairSlider{
     display: flex;
     flex-direction: row;
     
@@ -57,7 +63,7 @@
 }
 #imgSlider img
 {
-    width: 1200px;
+    width: 1000px;
     height: 600px;
 }
 .lefet,
@@ -68,13 +74,7 @@
     transform: translateY(-50%);
     cursor: pointer;
 }
+
 .right{
     right: 20px;
-}
-.icon-univers{
-
-font-size: 40px;
-vertical-align: middle;
-
-text-align: center;
 }
