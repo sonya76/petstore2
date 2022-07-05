@@ -44,22 +44,22 @@
         
     </ul>
 </div>
-<div class="sliders">
-    <div class="contunair-slider">
+<div class="slider">
+    <div class="contunairSlider">
         <div id="imgSlider">
-        <a href="index.php?page=accueil"><img src="./assets/img/slider1.png" alt="" /></a>
+        <img src="./assets/img/slider1.png" alt="" />
         </div>
         <div id="imgSlider">
-        <a href="index.php?page=accueil"><img src="./assets/img/slider2.png" alt="" /></a>
+        <img src="./assets/img/slider2.png" alt="" />
         </div>
         <div id="imgSlider">
-        <a href="index.php?page=accueil"><img src="./assets/img/slider3.png" alt="" /></a>
+       <img src="./assets/img/slider3.png" alt="" />
         </div>
         <div id="imgSlider">
-        <a href="index.php?page=accueil"><img src="./assets/img/slider4.png" alt="" /></a>
+       <img src="./assets/img/slider4.png" alt="" />
         </div>
         <div id="imgSlider">
-        <a href="index.php?page=accueil"><img src="./assets/img/slider5.png" alt="" /></a>
+        <img src="./assets/img/slider5.png" alt="" />
         </div>
     </div>
     <div class="directions">
