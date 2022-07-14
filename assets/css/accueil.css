@@ -16,7 +16,7 @@
     list-style: none;
     text-align: center;
     display: block;
-    padding: 1rem;  
+    padding: 2rem;  
   }
 
   #hadUnivres a {
@@ -33,40 +33,61 @@
     font-size: 40px;
     vertical-align: middle;
     text-align: center;
-    color: rgb(221, 220, 226);
+    color: #d4c7be;
+  
     
+
+  }
+  .icon-univers :hover  {
+    color: #9d5d35;
+    animation:zoom 0.5s ease-in-out;
+  }
+  @keyframes zoom{
+    0% {
+        font-size: 40px;
+    }
+    50% {
+        font-size: 50px;
+    }
+    100% {
+        font-size: 40px;
+    }
 
   }
   
 
     
     /*....................slider................................*/
-    
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+} 
     
 .slider{
-    width: 100%;
-    position: relative;
     
-    
+   display: flex;
+    overflow: hidden;
+    width: 1000px; 
+
 }
-.contunairSlider{
+.image{
     display: flex;
-    flex-direction: row;
+    animation-duration: 35s;
+    animation-name: glisse;
+    animation-iteration-count: infinite;
+    
+  
     
 }
-#imgSlider{
-    width: 100%;
-    display: flex;
-    flex: 1 0 100%;
-    justify-content: center;
-    
-}
-#imgSlider img
+
+.image img
 {
     width: 1000px;
     height: 600px;
 }
-.lefet,
+/* .lefet,
  .right{
     position: absolute;
       top: 50%;
@@ -77,4 +98,41 @@
 
 .right{
     right: 20px;
+}
+ */
+@keyframes glisse{
+	0% {
+        transform: translateX(0); 
+    }
+    10% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-1000px);
+    }
+    35% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(-2000px);
+    }
+    60% {
+        transform: translateX(-2000px);
+    }
+    75% {
+        transform: translateX(-3000px);
+    }
+    85% {
+        transform: translateX(-3000px);
+    }
+    90% {
+        transform: translateX(-4000px);
+    }
+    100% {
+        transform: translateX(-4000px);
+    }
+    
+    
+    
+    
 }
