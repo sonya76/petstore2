@@ -36,11 +36,7 @@
             </a>
         </li>
         <li>
-        <a href="">
-                <span class=icon-univers  ><i class="fa-solid fa-cow"></i></span>
-                <span class= text-univers>Animaux </span>
-            </a>
-        </li>
+    
         
     </ul>
 </div>
