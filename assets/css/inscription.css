@@ -1,0 +1,29 @@
+.titre{
+    text-align: center;
+}
+
+.right-box {
+    background-color: #d6c4b8;
+    width: 550px;
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+ .left-box{
+
+    width: 550px;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+} 
+.champValid {
+    display: flex;
+    justify-content: space-around;
+} 
+input[type="submit"],input[type="reset"] {
+    background-color: black;
+    color: white;
+  
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px 20px 0px;
+}

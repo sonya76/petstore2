@@ -4,7 +4,7 @@ label {
 
 .passwordOublie {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     text-decoration: none;
     margin: 0px;
     color: #d6c4b8;
@@ -25,6 +25,7 @@ label {
 .nouveauCompte,
 .monCompte {
     text-align: center;
+    padding: 10px;
 }
 
 ul.listePrivileges {
@@ -39,11 +40,16 @@ ul.listePrivileges li::before {
     margin-left: -1em;
 }
 
-li::marker {
-    color: #9D5D35;
-}
 
 a:hover,
 a:focus {
     color: #9d5d35;
+}input[type="submit"]{
+    background-color: black;
+    color: white;
+  
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px 20px 190px;
 }

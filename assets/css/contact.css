@@ -1,0 +1,46 @@
+#right-column > li {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.icone i {
+    text-decoration: none;
+    color: rgb(12, 11, 11);
+    margin-right: 10px;
+}
+  
+
+#reseauxSociaux{
+list-style: none;
+display: flex;
+margin: 200px 80px 0px 50px;
+justify-content: space-between;
+}
+
+.iconeReseaux i{
+color: black;
+}
+
+#reseauxSociaux i:hover {
+color: #9d5d35;
+     
+}
+ textarea {
+    
+    width: 90%;
+    margin: 15px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+
+}
+
+.toto
+{
+    display: flex;
+    justify-content: center;
+}
+    

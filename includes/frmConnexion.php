@@ -1,8 +1,8 @@
 <div class="hearder">
-        <h2>Connexion</h2>
+<h2>Connexion</h2>
       </div>
-      <div class="container">
-        <div class="container-left"> 
+      <div class="box">
+        <div class="left"> 
           <div class="left-titre">
             <h3 class="monCompte">J'ai un compte <span class="logoTitre">PetStore</span></h3>
           </div>
@@ -20,7 +20,7 @@
               <div class="form-group">
                 <a class="passwordOublie" href="#">Mot de passe oublié ?</a>
               </div>
-              <div class="form-group">
+              <div class="form-group" style="text-align:center;">
                 <input type="submit" value="Connexion" id="submitConnex" />
               </div>
               <input type="hidden" name="frmConnexion" />
@@ -28,7 +28,7 @@
           </div>
         </div>
       
-        <div class="container-right"> 
+        <div class="right"> 
           <div class="right-titre">
             <h3 class="nouveauCompte"> Je crée mon compte <span class="logoTitre">PetStore</span></h3>
           </div>
@@ -42,10 +42,13 @@
                       <li> Suivez vos commandes passées en magasin ou en ligne</li>
                       <li> et encore de nombreux avantages...</li>
                   </ul>
-              <div class="form-group">
-                  <input type="submit" value="Créer un compte" id="submit" />
-              </div>
+              <div class="form-group"style="text-align:center;">
+                 <a href="index.php?page=inscription"> <input type ="submit"  value="Créer un compte" id="submit" /></a>
+               </div>
           </div>
         </div>
-
-      </div>
+        <input type="hidden" name="frmConnexion" />
+      </form>
+    </div>
+  </div>
+</div>

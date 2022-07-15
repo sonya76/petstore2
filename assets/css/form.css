@@ -3,7 +3,7 @@
 }
 
 form {
-    position: absolute;
+    position: relative;
     /* postulat de départ */
     margin-top: 20px;
     margin-left: 20px;
@@ -11,23 +11,17 @@ form {
     /* à 50%/50% du parent référent */
 }
 
-input[type="submit"] {
-    background-color: black;
-    color: white;
-    margin: 15px;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    margin: 20px 0px 20px 190px;
-}
+
 
 input[type="submit"]:hover {
     background-color: #9d5d35;
 }
-
-input[type="email"],
+input[type="reset"]:hover{
+    background-color: #9d5d35;
+}
+input[type="email"],select,input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 90%;
     margin: 15px;
     padding: 12px 15px;
     border: 1px solid #ccc;
@@ -35,11 +29,9 @@ input[type="password"] {
     resize: vertical;
 }
 
-#submit {
-    margin: 50px 0px 10px 150px;
-}
 
-.container {
+
+.box {
     display: flex;
     justify-content: center;
     margin: 4rem auto;
@@ -47,7 +39,7 @@ input[type="password"] {
 }
 
 .box-left {
-    height: 550px;
+    height: 550px; 
     width: 550px;
     padding: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -55,7 +47,7 @@ input[type="password"] {
 
 .box-right {
     background-color: #d6c4b8;
-    height: 550px;
+     height: 550px; 
     width: 550px;
     padding: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
