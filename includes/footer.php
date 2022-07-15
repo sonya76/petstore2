@@ -22,7 +22,7 @@
             <br />
             <p>07 10 12 25 52</p>
             <br />
-            <a href="mailto:contact@petstore.com">contact@petstore.com</a>
+            <a href="index.php?page=contact"> <input type ="submit"  value="Nous contacter" id="submit" style="background-color: white; color:black"/></a>
         </address>
         <br />
         <div class="footer__iconesSocial">
