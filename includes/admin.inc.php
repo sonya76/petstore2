@@ -36,7 +36,7 @@ if (isset($_POST["frmLoginAdmin"])) {
             if (password_verify($password, $resultatPassword)) {
                 //$message = "Vous êtes connecté.";
                 // $_SESSION['loginUser'] = true;
-                //$_SESSION['loginAdmin'] = $login;
+                $_SESSION['loginAdmin'] = $login;
                 $requete = 'SELECT id_admin, login, nom, prenom FROM admin';
 
                 $querySelect = new Sql();
