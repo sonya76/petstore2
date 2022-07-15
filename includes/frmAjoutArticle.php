@@ -1,4 +1,4 @@
-<form action="index.php?page=admin" method="post">
+<form action="index.php?page=ajoutArticle" method="post">
     <div>
         <label for="libelle">Libelle : </label>
         <input type="text" name="libelle" id="libelle">
@@ -17,11 +17,27 @@
     </div>
     <div>
         <label for="tva">TVA : </label>
-        <input type="text" name="tva" id="tva">
+        <select name='tva'>
+            <?php
+            $choixTva = "";
+            foreach ($selectTva as $tva) {
+                $choixTva .= '<option value="' . $tva["id_tva"] . '">' . $tva["libelle"] . "</option>";
+            }
+            echo $choixTva;
+            ?>
+        </select>
     </div>
     <div>
         <label for="categorie">Catégorie : </label>
-        <input type="text" name="categorie" id="categorie">
+        <select name="categorie">
+            <?php
+            $choixCategorie = "";
+            foreach ($selectCategorie as $categorie) {
+                $choixCategorie .= '<option value="' . $categorie["id_categorie"] . '">' . $categorie["libelle"] . "</option>";
+            }
+            echo $choixCategorie;
+            ?>
+        </select>
     </div>
     <div>
         <input type="reset" value="Effacer">
