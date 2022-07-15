@@ -47,7 +47,9 @@ class Utilisateur implements interfaceUtilisateur
 
             $sql = 'Sql';
             $etat = $sql::inserer($requete);
-
+            if ($etat) {
+                mail($email, "Inscription à Petstore", "Vous êtes inscrit !");
+            }
             return $etat;
         }
     }
