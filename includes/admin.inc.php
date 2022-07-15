@@ -61,7 +61,7 @@ if (isset($_POST["frmLoginAdmin"])) {
 
                 $html .= "</table>";
 
-                $requete = 'SELECT id_ARTICLES, designiation, puht, poids, description, id_tva, id_CATEGORIE FROM articles';
+                $requete = 'SELECT id_ARTICLES, designiation, puht, poids, description, articles.id_tva, articles.id_CATEGORIE, taux, tva.libelle as tvaLibelle, categorie.libelle as catLibelle FROM articles Inner join tva on articles.id_tva = tva.id_tva Inner join categorie on articles.id_categorie = categorie.id_categorie';
                 $querySelect = new Sql();
                 $select = $querySelect->lister($requete);
 
@@ -71,6 +71,9 @@ if (isset($_POST["frmLoginAdmin"])) {
                                 <th>Prix HT</th>
                                 <th>Poids</th>
                                 <th>Description</th>
+                                <th>Taux TVA</th>
+                                <th>Nom TVA</th>
+                                <th>Catégorie</th>
                             </tr>";
 
                 foreach ($select as $row) {
@@ -79,6 +82,9 @@ if (isset($_POST["frmLoginAdmin"])) {
                     $html .= '<td>' . $row['puht'] . " €</td>";
                     $html .= '<td>' . $row['poids'] . " kg</td>";
                     $html .= '<td>' . $row['description'] . "</td>";
+                    $html .= '<td>' . $row['taux'] . "</td>";
+                    $html .= '<td>' . $row['tvaLibelle'] . "</td>";
+                    $html .= '<td>' . $row['catLibelle'] . "</td>";
                     // $html .= "<td>" . '<button><a href="index.php?page=update&id=' . $row['id_admin'] . '">Modifier</a></button>' . "</td>";
                     // $html .= "<td>" . '<button><a href="index.php?page=delete&id=' . $row['id_admin'] . '">Supprimer</button>' . "</td>";
                     $html .= "</tr>";
