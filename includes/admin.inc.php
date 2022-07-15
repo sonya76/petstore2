@@ -55,8 +55,8 @@ if (isset($_POST["frmLoginAdmin"])) {
                     $html .= '<td>' . $row['login'] . "</td>";
                     $html .= '<td>' . $row['nom'] . "</td>";
                     $html .= '<td>' . $row['prenom'] . "</td>";
-                    // $html .= "<td>" . '<button><a href="index.php?page=update&id=' . $row['id_admin'] . '">Modifier</a></button>' . "</td>";
-                    // $html .= "<td>" . '<button><a href="index.php?page=delete&id=' . $row['id_admin'] . '">Supprimer</button>' . "</td>";
+                    // $html .= "<td>" . '<button><a href="index.php?page=updateAdmin&id=' . $row['id_admin'] . '">Modifier</a></button>' . "</td>";
+                    // $html .= "<td>" . '<button><a href="index.php?page=deleteAdmin&id=' . $row['id_admin'] . '">Supprimer</button>' . "</td>";
                     $html .= "</tr>";
                 }
 
@@ -91,6 +91,40 @@ if (isset($_POST["frmLoginAdmin"])) {
                     $html .= '<td>' . $row['catLibelle'] . "</td>";
                     $html .= "<td>" . '<button><a href="index.php?page=updateArticle&id=' . $row['id_ARTICLES'] . '">Modifier</a></button>' . "</td>";
                     $html .= "<td>" . '<button><a href="index.php?page=deleteArticle&id=' . $row['id_ARTICLES'] . '">Supprimer</button>' . "</td>";
+                    $html .= "</tr>";
+                }
+
+                $html .= "</table>";
+
+                $requete = 'SELECT id_utilisateur, nom, prenom, email, adresse1, adresse2, cp, ville, telephone, valide FROM utilisateurs';
+                $querySelect = new Sql();
+                $select = $querySelect->lister($requete);
+
+                $html .= "<h2>Clients</h2>";
+                $html .= "<table>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>Email</th>
+                                <th>Adresse</th>
+                                <th>Code postal</th>
+                                <th>Ville</th>
+                                <th>Téléphone</th>
+                                <th>Vérifié</th>
+                            </tr>";
+
+                foreach ($select as $row) {
+                    $html .= "<tr>";
+                    $html .= '<td>' . $row['nom'] . "</td>";
+                    $html .= '<td>' . $row['prenom'] . "</td>";
+                    $html .= '<td>' . $row['email'] . "</td>";
+                    $html .= '<td>' . $row['adresse1'] . " " . $row['adresse2'] . "</td>";
+                    $html .= '<td>' . $row['cp'] . "</td>";
+                    $html .= '<td>' . $row['ville'] . "</td>";
+                    $html .= '<td>' . $row['telephone'] . "</td>";
+                    $html .= '<td>' . $row['valide'] . "</td>";
+                    $html .= "<td>" . '<button><a href="index.php?page=updateClient&id=' . $row['id_utilisateur'] . '">Modifier</a></button>' . "</td>";
+                    $html .= "<td>" . '<button><a href="index.php?page=deleteClient&id=' . $row['id_utilisateur'] . '">Supprimer</button>' . "</td>";
                     $html .= "</tr>";
                 }
 
