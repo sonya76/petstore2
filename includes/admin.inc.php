@@ -77,6 +77,7 @@ if (isset($_POST["frmLoginAdmin"])) {
                                 <th>Taux TVA</th>
                                 <th>Nom TVA</th>
                                 <th>Catégorie</th>
+                                <th><button><a href='index.php?page=ajoutArticle'>Ajouter article</th>
                             </tr>";
 
                 foreach ($select as $row) {
@@ -138,7 +139,7 @@ if (isset($_POST["frmLoginAdmin"])) {
         } else {
             $message = "Accès interdit";
         }
-        //echo $message;
+        echo $message;
     }
 } else {
     // $message = "je ne viens pas du formulaire";
