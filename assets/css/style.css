@@ -3,7 +3,9 @@
 @import url('./connexion.css');
 @import url('./inscription.css');
 @import url('./form.css');
+@import url('./accueil.css');
 @import url('./contact.css');
+
 
 body {
     margin: 0;
