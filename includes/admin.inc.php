@@ -37,8 +37,8 @@ if (isset($_POST["frmLoginAdmin"])) {
                 //$message = "Vous êtes connecté.";
                 // $_SESSION['loginUser'] = true;
                 $_SESSION['loginAdmin'] = $login;
-                $requete = 'SELECT id_admin, login, nom, prenom FROM admin';
 
+                $requete = 'SELECT id_admin, login, nom, prenom FROM admin';
                 $querySelect = new Sql();
                 $select = $querySelect->lister($requete);
 
@@ -54,6 +54,31 @@ if (isset($_POST["frmLoginAdmin"])) {
                     $html .= '<td>' . $row['login'] . "</td>";
                     $html .= '<td>' . $row['nom'] . "</td>";
                     $html .= '<td>' . $row['prenom'] . "</td>";
+                    // $html .= "<td>" . '<button><a href="index.php?page=update&id=' . $row['id_admin'] . '">Modifier</a></button>' . "</td>";
+                    // $html .= "<td>" . '<button><a href="index.php?page=delete&id=' . $row['id_admin'] . '">Supprimer</button>' . "</td>";
+                    $html .= "</tr>";
+                }
+
+                $html .= "</table>";
+
+                $requete = 'SELECT id_ARTICLES, designiation, puht, poids, description, id_tva, id_CATEGORIE FROM articles';
+                $querySelect = new Sql();
+                $select = $querySelect->lister($requete);
+
+                $html .= "<table>
+                            <tr>
+                                <th>Nom de l'article</th>
+                                <th>Prix HT</th>
+                                <th>Poids</th>
+                                <th>Description</th>
+                            </tr>";
+
+                foreach ($select as $row) {
+                    $html .= "<tr>";
+                    $html .= '<td>' . $row['designiation'] . "</td>";
+                    $html .= '<td>' . $row['puht'] . " €</td>";
+                    $html .= '<td>' . $row['poids'] . " kg</td>";
+                    $html .= '<td>' . $row['description'] . "</td>";
                     // $html .= "<td>" . '<button><a href="index.php?page=update&id=' . $row['id_admin'] . '">Modifier</a></button>' . "</td>";
                     // $html .= "<td>" . '<button><a href="index.php?page=delete&id=' . $row['id_admin'] . '">Supprimer</button>' . "</td>";
                     $html .= "</tr>";
